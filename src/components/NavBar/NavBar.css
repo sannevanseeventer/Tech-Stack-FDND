@@ -47,8 +47,12 @@ a {
     flex-direction: column;
 }
 
-.nav-header img {
+/* .nav-header img {
     width: 6.5rem;
+} */
+
+.logo {
+    width: 5rem;
 }
 
 .nav-header {

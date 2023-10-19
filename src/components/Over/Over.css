@@ -1,0 +1,63 @@
+.climate-container {
+    height: 100%;
+    width: 100vw;
+    padding-top: 5rem;
+    background: var(--lg-bg);
+}
+
+.inner-section {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    padding: 0rem;
+    color: var(--spat);
+    margin-bottom: 1rem;
+}
+
+.horizontal-flex-row {
+    width: 100%;
+    display: flex;
+    gap: 10%;
+}
+
+.text-container {
+    width: 50%;
+}
+
+.tree {
+    height: 20rem;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+/* Mobiele weergaven */
+@media only screen and (max-width: 1100px) {
+    .horizontal-flex-row {
+        flex-direction: column;
+    }
+
+    .text-container {
+        width: 100%;
+    }
+
+    .image-container {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .tree {
+        height: 10rem;
+        width: 100%;
+        z-index: -1;
+        object-fit: contain;
+    }
+
+    .inner-section {
+        /* padding: 0rem 2.5rem; */
+        width: 70%;
+        margin-bottom: 2rem;
+    }
+}
