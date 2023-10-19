@@ -1,33 +1,41 @@
-> _Fork_ deze leertaak en ga aan de slag. 
-Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. 
-De instructie vind je in: [docs/INSTRUCTIONS.md](https://github.com/fdnd-task/choices-choices-the-tech-stack/blob/main/docs/INSTRUCTIONS.md)
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+# SPAT-Water💧
+
+## Beschrijving 📃
+Kies een andere tech-stack voor het ontwerpen en bouwen van een website voor een opdrachtgever.
+
+![mockup3](https://github.com/sannevanseeventer/SPATwater-2.0/assets/112857444/e668acea-201f-4391-be72-2eb91ce4367d)
 
 ## Inhoudsopgave
 
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Gebruik](#gebruik)
-  * [Bronnen](#bronnen)
+  * [Beschrijving📃](#beschrijving)
+  * [Gebruik👥](#gebruik)
+  * [Kenmerken✅](#kenmerken)
+  * [Installatie⚙️](#installatie)
+  * [Bronnen🌐](#bronnen)
   * [Licentie](#licentie)
+    
+##  Gebruik  👥
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
-## Kenmerken
+## Kenmerken ✅
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
-## Installatie
+**GEBRUIKTE TECHNIEKEN 🛠️:**
+* Astro
+* React
+* Directus
+  
+## Installatie ⚙️
 
-## Gebruik
+1. Clone of download deze repository naar de gewenste folder.
+2. Open de root directory van dit project en open het project in een code editor naar keuze.
+3. Gebruik npm install om de benodigde packages te downloaden voor dit project.
+4. Voor het gebruik van Hygraph om data in te laden gebruik dan het commando npm graphql-request om requesten te fetchen.
+5. Start een server met npm run dev.
 
-## Bronnen
+## Bronnen 🌐
 
 ## Licentie
-
-This project is licensed under the terms of the [MIT license](./LICENSE).
+This project is licensed under the terms of the MIT license.
