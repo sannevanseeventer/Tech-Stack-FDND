@@ -5,7 +5,7 @@ export const Klimaatadaptatie = () => {
     // Component code here
     <div className="light-background">
  
-  <section className="first-section">
+  <section>
     <div className="inner-section">
       <div className="horizontal-flex-row">
         <div className="text-container">

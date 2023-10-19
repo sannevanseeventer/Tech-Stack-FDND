@@ -1,14 +1,9 @@
-section {
+.climate-container {
     width: 100%;
-}
-
-.light-background {
     background: var(--lg-bg);
-    /* padding: 1rem 0rem 2rem 0rem; */
 }
 
 .inner-section {
-    /* padding: 0rem 2.5rem; */
     width: 70%;
     margin-left: 15%;
     margin-bottom: 3rem;
@@ -24,12 +19,6 @@ h2 {
     font-weight: 600;
 }
 
-ul {
-    list-style: none;
-    font-size: 0.8rem;
-    color: var(--darkblue);
-}
-
 .horizontal-flex-row {
     width: 100%;
     display: flex;
@@ -37,13 +26,17 @@ ul {
 }
 
 .text-container {
-    width: 50%;
+    width: 60%;
 }
 
-.image-klimaat {
+.image-container {
+    width: 40%;
+}
+
+.image-brain {
     height: 20rem;
     object-fit: cover;
-    border-radius: 0.5rem;
+    border-radius: .5rem;
 }
 
 /* Mobiele weergaven */
@@ -61,14 +54,11 @@ ul {
         margin-top: 1rem;
     }
 
-    .image-klimaat {
-        height: 10rem;
+    .image-brain {
+        height: 20rem;
         width: 100%;
+        z-index: -1;
         object-fit: cover;
-    }
-
-    .mobile-image {
-        display: none;
     }
 
     .inner-section {

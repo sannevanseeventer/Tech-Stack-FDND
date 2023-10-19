@@ -3,8 +3,6 @@ import '../Waterkwaliteit/Waterkwaliteit.css';
 export const Waterkwaliteit = () => {
   return (
 
-<main>
-    <section className="first-section">
         <div className="inner-section">
           <div className="horizontal-flex-row">
             <div className="image-container">
@@ -25,8 +23,7 @@ export const Waterkwaliteit = () => {
               
           </div>
         </div>
-    </section>
-</main>
+
 
 );
 };
