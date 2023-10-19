@@ -1,41 +1,47 @@
+# Astro Starter Kit: Minimal
 
-# SPAT-Water💧
+```sh
+npm create astro@latest -- --template minimal
+```
 
-## Beschrijving 📃
-Kies een andere tech-stack voor het ontwerpen en bouwen van een website voor een opdrachtgever.
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
-![mockup3](https://github.com/sannevanseeventer/SPATwater-2.0/assets/112857444/e668acea-201f-4391-be72-2eb91ce4367d)
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## Inhoudsopgave
+## 🚀 Project Structure
 
-  * [Beschrijving📃](#beschrijving)
-  * [Gebruik👥](#gebruik)
-  * [Kenmerken✅](#kenmerken)
-  * [Installatie⚙️](#installatie)
-  * [Bronnen🌐](#bronnen)
-  * [Licentie](#licentie)
-    
-##  Gebruik  👥
+Inside of your Astro project, you'll see the following folders and files:
 
-<!-- Voeg een link toe naar Github Pages 🌐-->
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-## Kenmerken ✅
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-**GEBRUIKTE TECHNIEKEN 🛠️:**
-* Astro
-* React
-* Directus
-  
-## Installatie ⚙️
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-1. Clone of download deze repository naar de gewenste folder.
-2. Open de root directory van dit project en open het project in een code editor naar keuze.
-3. Gebruik npm install om de benodigde packages te downloaden voor dit project.
-4. Voor het gebruik van Hygraph om data in te laden gebruik dan het commando npm graphql-request om requesten te fetchen.
-5. Start een server met npm run dev.
+Any static assets, like images, can be placed in the `public/` directory.
 
-## Bronnen 🌐
+## 🧞 Commands
 
-## Licentie
-This project is licensed under the terms of the MIT license.
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
