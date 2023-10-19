@@ -21,7 +21,7 @@ export const Home = () => {
       <div id="text">
         <h1 className="home-title">Een nieuwe generatie hydrologen</h1>
         <h2><span className="home-content">Concreet op water en bodem</span></h2>
-        <h3 className="home-scroll">scroll<span class="material-symbols-outlined">arrow_downward</span>
+        <h3 className="home-scroll">scroll<span className="material-symbols-outlined">arrow_downward</span>
         </h3>
       </div>
       <img src="/grondmobilee.png" id="ground" alt="grond illustratie" />
@@ -39,7 +39,7 @@ export const Home = () => {
       <div id="text2">
         <h1 className="home-title2">Een nieuwe generatie hydrologen</h1>
         <span className="home-content2">Concreet op water en bodem</span>
-        <h3 className="home-scroll2">scroll<span class="material-symbols-outlined">arrow_downward</span></h3>
+        <h3 className="home-scroll2">scroll<span className="material-symbols-outlined">arrow_downward</span></h3>
       </div>
       <img
         src="/backgroundfullfinall.png"
