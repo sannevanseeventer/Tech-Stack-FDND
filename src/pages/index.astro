@@ -10,23 +10,10 @@ import { Klimaatadaptatie } from "../components/Klimaatadaptatie/Klimaatadaptati
 import { Waterkwaliteit } from "../components/Waterkwaliteit/Waterkwaliteit.jsx";
 import { Brain } from "../components/Brain/Brain.jsx";
 import { Projecten } from "../components/Projecten/Projecten.jsx";
-import { Kennisbank } from "../components/Kennisbank/Kennisbank.jsx";
+import  Kennisbank from "../components/Kennisbank/Kennisbank.jsx";
 import { Team } from "../components/Team/Team.jsx";
 import { Contact } from "../components/Contact/Contact.jsx";
 import { Partners } from "../components/Partners/Partners.jsx";
-
-import { fetchData } from "../components/Kennisbank/Kennisbank.jsx";
-
-let data;
-
-(async () => {
-  try {
-    ({ data } = await fetchData()); // assign the value to the outer data variable
-    console.log(data);
-  } catch (error) {
-    console.error('Error:', error);
-  }
-})();
 
 ---
 
@@ -38,7 +25,7 @@ let data;
 	<Waterkwaliteit />
 	<Brain />
 	<Projecten />
-	{data && <Kennisbank data={data}/>}
+	 <Kennisbank />
 	<Team />
 	<Contact />
 	<Partners />
