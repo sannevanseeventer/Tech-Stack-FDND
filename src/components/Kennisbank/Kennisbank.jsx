@@ -1,15 +1,25 @@
-const data = fetch('http://localhost:8055/items/Kennisbank')
-.then(response => response.json())
-.then(data => {
-    console.log(data)
-})
-console.log(data)
+import '../Kennisbank/Kennisbank.css';
 
+export async function fetchData() {
+  try {
+    const response = await fetch('http://localhost:8055/items/kennisbank');
+    const data = await response.json();
+    console.log(data);
+    return { data };
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    throw { error };
+  }
+}
 
-export const Kennisbank = () => {
-    // Component code here
-    return (
-
-      <h3>{Kennisbank.title}</h3>
-    );
+const Kennisbank = ({ data }) => {
+  return (
+    <div>
+       <h3>{data.id}</h3>
+      <h3>{data.title}</h3>
+     <h3>{data.content}</h3>
+    </div>
+  );
 };
+
+export { Kennisbank };

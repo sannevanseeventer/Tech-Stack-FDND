@@ -2,8 +2,8 @@ import '../Brain/Brain.css';
 
 export const Brain = () => {
     // Component code here
+  
 return (
-
 
   <section className="climate-container">
     <div className="inner-section">

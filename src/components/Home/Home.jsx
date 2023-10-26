@@ -1,10 +1,3 @@
-import { Helmet } from 'react-helmet';
-import '../Home/Home.css';
-
-<Helmet>
-    <script src="../js/parallax.js"></script>
-</Helmet>
-
 export const Home = () => {
     return (
 

@@ -1,6 +1,6 @@
-import '../NavBar/NavBar.css';
+import '../Header/Header.css';
 
-export const Navbar = () => {
+export const Header = () => {
   return (
 
 <div className="navbar">

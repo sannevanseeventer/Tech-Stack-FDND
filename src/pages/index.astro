@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import '../js/parallax.js';
 
-import { Navbar } from "../components/NavBar/Navbar.jsx";
+import Layout from "../layouts/Layout.astro";
 import { Home } from "../components/Home/Home.jsx";
 import { Over } from "../components/Over/Over.jsx";
 import { Expertise } from "../components/Expertise/Expertise.jsx";
@@ -14,42 +14,33 @@ import { Kennisbank } from "../components/Kennisbank/Kennisbank.jsx";
 import { Team } from "../components/Team/Team.jsx";
 import { Contact } from "../components/Contact/Contact.jsx";
 import { Partners } from "../components/Partners/Partners.jsx";
-import { Footer } from "../components/Footer/Footer.jsx";
+
+import { fetchData } from "../components/Kennisbank/Kennisbank.jsx";
+
+let data;
+
+(async () => {
+  try {
+    ({ data } = await fetchData()); // assign the value to the outer data variable
+    console.log(data);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+})();
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
+<Layout title="homepage">
+	<Home />
+	<Over />
+	<Expertise />
+	<Klimaatadaptatie />
+	<Waterkwaliteit />
+	<Brain />
+	<Projecten />
+	{data && <Kennisbank data={data}/>}
+	<Team />
+	<Contact />
+	<Partners />
+</Layout>
 
-		<!--=============== REMIXICONS ===============-->
-	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-	<!--=============== GOOGLE ICONS ===============-->
-	<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-
-		<title>Astro</title>
-	</head>
-	<body>
-
-<Navbar />
-<Home />
-<Over />
-<Expertise />
-<Klimaatadaptatie />
-<Waterkwaliteit />
-<Brain />
-<Projecten />
-<Kennisbank />
-<Team />
-<Contact />
-<Partners />
-<Footer />
-
-	</body>
-</html>

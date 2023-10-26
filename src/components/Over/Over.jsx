@@ -12,7 +12,7 @@ export const Over = () => {
         <p>Met expertise op het gebied van waterkwaliteit, de Kaderrichtlijn Water en klimaatadaptatie helpt SPATwater overheden en bedrijven om toekomstbestendig en waterrobuust te worden.</p>
         <p>Wij voeren geen analyse uit zonder handelingsperspectief en bieden zowel creatieve als praktische oplossingen.</p>
 
-        <a href="#expertise" class="button">Onze expertise</a>
+        <a href="#expertise" className="button">Onze expertise</a>
       </div>
       <div className="image-container">
         <img className="tree" src="/tree.png" alt="boom illustratie" />
