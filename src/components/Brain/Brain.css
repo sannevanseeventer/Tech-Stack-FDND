@@ -5,14 +5,7 @@
 
 .inner-section {
     width: 70%;
-    margin-left: 15%;
     margin-bottom: 3rem;
-}
-
-h2 {
-    padding: 0rem;
-    color: var(--spat);
-    margin-bottom: 1rem;
 }
 
 .bold-text {
